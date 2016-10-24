@@ -1,7 +1,7 @@
 <?php
 
 //Instance settings
-Phpfox_Setting::instance()->setParam('cmmaterial.wellcome_title', setting('cm_material_wellcome_title', 'Title'));
+Phpfox_Setting::instance()->setParam('cmmaterial.wellcome_title', setting('cm_material_welcome_title', 'Title'));
 Phpfox_Setting::instance()->setParam('cmmaterial.wellcome_subtitle', setting('cm_material_welcome_subtitle', 'Sub Title'));
 Phpfox_Setting::instance()->setParam('cmmaterial.number_of_blogs', setting('cm_material_number_of_blogs', '6'));
 Phpfox_Setting::instance()->setParam('cmmaterial.blog_sort', setting('cm_material_blog_sort', 'latest'));
