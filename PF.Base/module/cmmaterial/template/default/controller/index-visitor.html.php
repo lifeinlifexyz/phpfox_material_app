@@ -2,10 +2,8 @@
 /**
  * [PHPFOX_HEADER]
  * 
- * @copyright		[YouNetCo]
- * @author  		YouNetCo
- * @package 		Ynclean
- * @version 		4.01
+ * @author  		CodeMake.Org
+ * @package 		Material
  */
  
 defined('PHPFOX') or exit('NO DICE!'); 
