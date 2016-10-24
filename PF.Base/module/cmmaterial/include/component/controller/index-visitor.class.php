@@ -5,14 +5,11 @@
 
 defined('PHPFOX') or exit('NO DICE!');
 
+
 /**
- *
- *
- * @version         4.01
- * @package         Module_Ynclean
- *
- * @author          YouNetCo
- * @copyright       [YouNetCo]
+ * @copyright      [PHPFOX_COPYRIGHT]
+ * @author         CodeMake.Org
+ * @package        Module_CMmaterial
  */
 class Cmmaterial_Component_Controller_Index_Visitor extends Phpfox_Component
 {
