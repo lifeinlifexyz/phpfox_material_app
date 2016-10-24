@@ -1,0 +1,121 @@
+<module>
+	<data>
+		<module_id>cmmaterial</module_id>
+		<product_id>codemake_cmmaterialv4</product_id>
+		<is_core>0</is_core>
+		<is_active>1</is_active>
+		<is_menu>0</is_menu>
+		<menu />
+		<phrase_var_name>module_cmmaterial</phrase_var_name>
+	</data>
+	<blocks>
+		<block type_id="0" m_connection="cmmaterial.index-visitor" module_id="cmmaterial" component="wellcome" location="6" is_active="1" ordering="7" disallow_access="" can_move="0">
+			<title>Title</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="cmmaterial.index-visitor" module_id="cmmaterial" component="section-coll" location="2" is_active="1" ordering="2" disallow_access="" can_move="0">
+			<title>Section Collumns</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="cmmaterial.index-visitor" module_id="cmmaterial" component="section-row" location="2" is_active="1" ordering="3" disallow_access="" can_move="0">
+			<title>Section Rows</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="cmmaterial.index-visitor" module_id="cmmaterial" component="photos" location="2" is_active="1" ordering="4" disallow_access="" can_move="0">
+			<title>Photos</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="cmmaterial.index-visitor" module_id="cmmaterial" component="popular-users" location="2" is_active="1" ordering="5" disallow_access="" can_move="0">
+			<title>Users</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="cmmaterial.index-visitor" module_id="cmmaterial" component="blog" location="2" is_active="1" ordering="6" disallow_access="" can_move="0">
+			<title>Blogs</title>
+			<source_code />
+			<source_parsed />
+		</block>
+	</blocks>
+	<components>
+		<component module_id="cmmaterial" component="index-visitor" m_connection="cmmaterial.index-visitor" module="cmmaterial" is_controller="1" is_block="0" is_active="1" />
+		<component module_id="cmmaterial" component="section-coll" m_connection="" module="cmmaterial" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="cmmaterial" component="section-row" m_connection="" module="cmmaterial" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="cmmaterial" component="wellcome" m_connection="" module="cmmaterial" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="cmmaterial" component="photos" m_connection="" module="cmmaterial" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="cmmaterial" component="popular-users" m_connection="" module="cmmaterial" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="cmmaterial" component="blog" m_connection="" module="cmmaterial" is_controller="0" is_block="1" is_active="1" />
+	</components>
+	<phrases>
+		<phrase module_id="cmmaterial" version_id="3.7.5" var_name="module_cmmaterial" added="1400494695">CodeMake Material Theme</phrase>
+		<phrase module_id="cmmaterial" version_id="3.7.5" var_name="recent_photos" added="1400844678">Recent Photos</phrase>
+		<phrase module_id="cmmaterial" version_id="3.7.5" var_name="photo" added="1401072973">Photo</phrase>
+		<phrase module_id="cmmaterial" version_id="3.7.5" var_name="photos" added="1401072991">Photos</phrase>
+		<phrase module_id="cmmaterial" version_id="3.7.5" var_name="left" added="1401089821">left</phrase>
+		<phrase module_id="cmmaterial" version_id="3.7.5" var_name="allowed_file_extensions_jpg_png_gif" added="1401190334">Allowed file extensions: jpg, png, gif..</phrase>
+		<phrase module_id="cmmaterial" version_id="3.7.5" var_name="choose_file" added="1401190473">Choose File:</phrase>
+		<phrase module_id="cmmaterial" version_id="3.7.5" var_name="uploading_a_picture_will_overwrite_the_current_one_for_this_item" added="1401190533">
+            Uploading a picture will overwrite the current one for this item
+        </phrase>
+		<phrase module_id="cmmaterial" version_id="3.7.5" var_name="title" added="1401242540">Title</phrase>
+		<phrase module_id="cmmaterial" version_id="3.7.5" var_name="edit" added="1401260022">Edit</phrase>
+		<phrase module_id="cmmaterial" version_id="3.7.5" var_name="delete" added="1401260049">Delete</phrase>
+		<phrase module_id="cmmaterial" version_id="3.7.5" var_name="status" added="1401261556">Status</phrase>
+		<phrase module_id="cmmaterial" version_id="3.7.5" var_name="delete_selected" added="1401267584">Delete Selected</phrase>
+		<phrase module_id="cmmaterial" version_id="3.7.5" var_name="notice" added="1401270129">Notice</phrase>
+		<phrase module_id="cmmaterial" version_id="3.7.5" var_name="yes" added="1401270568">Yes</phrase>
+		<phrase module_id="cmmaterial" version_id="3.7.5" var_name="no" added="1401270575">No</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.0" var_name="image" added="1463721757">Image</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.0" var_name="background_image" added="1463805154">Background Image</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.0" var_name="you_can_upload_a_jpg_gif_or_png_file" added="1463805202">You can upload a JPG, GIF or PNG file.</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.0" var_name="click_here_to_delete_this_image_and_upload_a_new_one_in_its_place" added="1463805317">
+            Click here to delete this image and upload a new one in its place.
+        </phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.0" var_name="latest" added="1463813170">Latest</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.0" var_name="most_viewed" added="1463813179">Most Viewed</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.0" var_name="most_discussed" added="1463813189">Most Discussed</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.0" var_name="most_liked" added="1463813205">Most Liked</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.0" var_name="description" added="1464064712">Description</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.0" var_name="link" added="1464066529">Link</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.0" var_name="text" added="1464066536">Text</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.0" var_name="url" added="1464066607">URL</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.0" var_name="title_is_required" added="1464073796">Title is required.</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.0" var_name="description_is_required" added="1464073816">Description is required.</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.0" var_name="photo_is_required" added="1464075824">Photo is required.</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.0" var_name="link_text_is_required" added="1464075838">Link text is required.</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.0" var_name="link_url_is_required" added="1464075849">Link URL is required.</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.0" var_name="icon" added="1464162992">Icon</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.0" var_name="hover_icon" added="1464163023">Hover Icon</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.0" var_name="icon_is_required" added="1464163751">Icon is required.</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.0" var_name="hover_icon_is_required" added="1464163821">Hover Icon is required.</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.0" var_name="link_is_required" added="1464164984">Link is required.</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.0" var_name="latest_photos" added="1464576160">Latest Photos</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.0" var_name="most_viewed_photos" added="1464576176">Most Viewed Photos</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.0" var_name="most_discussed_photos" added="1464576190">Most Discussed Photos</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.0" var_name="maximum_512_characters" added="1464930171">Maximum 512 characters</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.0" var_name="maximum_220_characters" added="1464937835">Maximum 220 characters</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.0" var_name="wellcome_title" added="1467165353">Wellcome title</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.0" var_name="wellcome_subtitle" added="1467165353">Wellcome sub title.</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.2" var_name="admin_menu_section_coll" added="1475777292">Section Type Coll</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.2" var_name="admin_menu_admin_menu_section_row" added="1475783824">Section Type Row</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.2" var_name="background" added="1476932380">Background</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.2" var_name="image_position" added="1476932410">Image Position</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.2" var_name="subtitle" added="1476932448">Subtitle</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.2" var_name="create_one_now" added="1476932701">Add</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.2" var_name="view_more" added="1476932820">View More</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.2" var_name="popular_users" added="1476932917">Popular Users</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.2" var_name="latest_blogs" added="1476933044">Latest Blogs</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.2" var_name="most_viewed_blogs" added="1476933118">Most Viewed Blogs</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.2" var_name="most_discussed_blogs" added="1476933167">Most Discussed Blogs</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.2" var_name="section_block_successfully_updated" added="1476993911">Block successfully updated</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.2" var_name="section_block_successfully_added" added="1476993947">Block successfully added</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.2" var_name="submit" added="1476994065">Save</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.2" var_name="section_s_successfully_deleted" added="1476995481">Sections successfully deleted</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.2" var_name="section_successfully_deleted" added="1476995520">Section successfully deleted</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.2" var_name="edit_section_block" added="1477291644">Edit section block</phrase>
+		<phrase module_id="cmmaterial" version_id="4.4.2" var_name="add_section_block" added="1477291667">Add section block</phrase>
+	</phrases>
+</module>

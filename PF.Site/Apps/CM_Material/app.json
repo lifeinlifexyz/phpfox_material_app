@@ -1,0 +1,56 @@
+{
+  "id": "CM_Material",
+  "name": "CM Material App",
+  "version": "1.0.0",
+  "vendor": "<a href=\"//codemake.org\" target=\"_blank\">CodeMake.Org</a> - See all our products <a href=\"//store.phpfox.com/techie/u/ecodemaster\" target=_new>HERE</a> - contact us at: support@codemake.org",
+  "icon": "",
+  "admincp_route": "/cmmaterial/admincp",
+  "admincp_menu": {
+    "Section Type Row": "/cmmaterial/section/row/",
+    "Section Type Coll": "/cmmaterial/section/coll/"
+  },
+  "settings": {
+    "cm_material_enabled": {
+      "info": "Material App Enabled",
+      "type": "input:radio",
+      "value": 1,
+      "js_variable": true
+    },
+    "cm_material_welcome_title": {
+      "info": "Welcome Title",
+      "value": "Material Kit"
+    },
+    "cm_material_welcome_subtitle": {
+      "info": "Welcome Sub Title",
+      "value": "Start Your Development With A Badass Bootstrap UI Kit inspired by Material Design."
+    },
+    "cm_material_number_of_blogs": {
+      "info": "Number Of Blogs On The Index Visitor",
+      "value": "6"
+    },
+    "cm_material_blog_sort": {
+      "info": "Sort Blogs",
+      "value": "latest",
+      "type": "select",
+      "options": {
+        "most_discussed": "Most Discussed",
+        "most_viewed": "Most Viewed",
+        "latest": "Latest"
+      }
+    },
+    "cm_material_number_of_photos": {
+      "info": "Number of photos",
+      "value": "6"
+    },
+    "cm_material_photo_sort": {
+      "info": "Sort Photos",
+      "value": "latest",
+      "type": "select",
+      "options": {
+        "most_discussed": "Most Discussed",
+        "most_viewed": "Most Viewed",
+        "latest": "Latest"
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+<product>
+	<data>
+		<store_id />
+		<product_id>codemake_cmmaterialv4</product_id>
+		<is_core>0</is_core>
+		<title>CM Material Theme</title>
+		<description>by Codemake.org Company</description>
+		<version>4.4.2p1.0.0</version>
+		<latest_version></latest_version>
+		<last_check>0</last_check>
+		<is_active>1</is_active>
+		<url></url>
+		<url_version_check></url_version_check>
+		<icon>http://cdn.codemake.org/phpfox/webinar/webinar_logo.png</icon>
+		<vendor></vendor>
+	</data>
+	<installs>
+		<install>
+			<version>1.0.0</version>
+			<install_code><![CDATA[$this->database()->query('CREATE TABLE IF NOT EXISTS `' . Phpfox::getT('cmmaterial_section') . "` (
+      `section_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+      `title` varchar(255) DEFAULT NULL,
+      `subtitle` varchar(255) DEFAULT NULL,
+      `description` text,
+      `type` ENUM(  'row',  'coll' ) DEFAULT  'coll',
+      `background` ENUM(  'white',  'dark' ) DEFAULT  'white',
+      `image_position` ENUM(  'left',  'right' ) DEFAULT  'right',
+      `image_path` varchar(75) DEFAULT NULL,
+      `server_id` tinyint(1) NOT NULL DEFAULT '0',
+      `link` text,
+      `user_id` int(10) UNSIGNED DEFAULT NULL,
+      `time_stamp` int(10) UNSIGNED DEFAULT NULL,
+      `is_active` tinyint(1) NOT NULL DEFAULT '1',
+      `ordering` int(10) UNSIGNED NOT NULL DEFAULT '0',
+      PRIMARY KEY (`section_id`)
+    );");]]></install_code>
+			<uninstall_code><![CDATA[$this->database()->query("DROP TABLE IF EXISTS `".Phpfox::getT('cmmaterial_section')."`;");]]></uninstall_code>
+		</install>
+	</installs>
+	<modules>
+		<module_id>cmmaterial</module_id>
+	</modules>
+</product>

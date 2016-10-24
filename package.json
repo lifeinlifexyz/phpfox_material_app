@@ -1,0 +1,11 @@
+{
+    "id": "CM_Material",
+    "internal_id": 0,
+    "version": "1.0.0",
+    "current_version": null,
+    "name": "CM Material App",
+    "module": false,
+    "type": "app",
+    "icon": "<b class=\"app_icons\"><i class=\"app_icon _cm\">CM<\/i><\/b>",
+    "is_core": false
+}
