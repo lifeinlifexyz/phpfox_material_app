@@ -19,7 +19,6 @@ class Cmmaterial_Component_Controller_Admincp_Section_Basesection extends Phpfox
     {
         $oFilter = Phpfox::getLib('parse.input');
         $sType = $oFilter->clean($this->request()->get('req4'));
-        $sType = (empty($sType)?'row':$sType);
         $aAllowedTypes = ['row', 'coll'];
 
         if (!in_array($sType, $aAllowedTypes)) {

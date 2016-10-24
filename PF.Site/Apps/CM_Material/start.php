@@ -16,25 +16,6 @@ event('app_settings', function ($settings){
 
 group('/cmmaterial', function (){
 
-    route('/admincp', function (){
-        auth()->isAdmin(true);
-        if(!Phpfox::getService('admincp.product')->isProduct('codemake_cmmaterialv4')){
-            if (file_exists(PHPFOX_DIR_XML.'codemake_cmmaterialv4.xml')){
-                echo('material module not installed, please install the module on the <a href="'.Phpfox::getLib('url')->makeUrl('admincp').'">dashboard</a>');
-            } else {
-                echo('material module not installed');
-            }
-            return 'controller';
-        }
-
-        if (!Phpfox_Module::instance()->isModule('cmmaterial')){
-            echo('The module is disabled.');
-            return 'controller';
-        }
-        Phpfox_Module::instance()->dispatch('cmmaterial.admincp.section.row');
-        return 'controller';
-    });
-
     route('/admincp/section/row', function (){
         auth()->isAdmin(true);
         if(!Phpfox::getService('admincp.product')->isProduct('codemake_cmmaterialv4')){
