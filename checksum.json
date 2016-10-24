@@ -34,6 +34,7 @@
     "PF.Base\/module\/cmmaterial\/template\/default\/controller\/admincp\/section\/coll.html.php",
     "PF.Base\/module\/cmmaterial\/template\/default\/controller\/admincp\/section\/index.html.php",
     "PF.Base\/module\/cmmaterial\/template\/default\/controller\/admincp\/section\/row.html.php",
+    "PF.Base\/module\/cmmaterial\/template\/default\/controller\/index-visitor.html.php",
     "PF.Base\/include\/xml\/codemake_cmmaterialv4.xml",
     "PF.Base\/module\/cmmaterial\/phpfox.xml",
     "package.json",
