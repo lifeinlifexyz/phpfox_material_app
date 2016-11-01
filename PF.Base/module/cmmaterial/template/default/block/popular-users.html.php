@@ -7,6 +7,9 @@
 		</div>
 		{if !empty($aPopularUsers)}
 		<div class="row">
+			<?php
+				$index = 0;
+			?>
 			{foreach from=$aPopularUsers item=aUser}
 			<div class="col-md-4 col-sm-6 col-xs-12 item">
 				<div class="card card-profile card-plain">
@@ -23,6 +26,16 @@
 					</div>
 				</div>
 			</div>
+			<?php
+				$index++;
+				if ($index % 3 == 0):
+			?>
+			<div class="clearfix visible-md visible-lg"></div>
+			<?php endif;
+				if ($index % 2 == 0):
+			?>
+					<div class="clearfix visible-sm"></div>
+			<?php endif;?>
 			{/foreach}
 		</div>
 		{else}

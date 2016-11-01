@@ -1,11 +1,12 @@
 {
     "id": "CM_Material",
     "internal_id": 0,
-    "version": "1.0.0",
+    "version": "4.0.3",
     "current_version": null,
-    "name": "CM Material App",
+    "name": "CM Material Template App",
     "module": false,
     "type": "app",
-    "icon": "<b class=\"app_icons\"><i class=\"app_icon _cm\">CM<\/i><\/b>",
-    "is_core": false
+    "icon": "<div class=\"app_icons image_load\" data-src=\"\/\/cdn.codemake.org\/phpfox\/cmmaterial\/default.png\"><\/div>",
+    "is_core": false,
+    "store_id": "1625"
 }

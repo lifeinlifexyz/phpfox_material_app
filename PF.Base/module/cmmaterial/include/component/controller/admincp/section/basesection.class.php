@@ -40,10 +40,6 @@ class Cmmaterial_Component_Controller_Admincp_Section_Basesection extends Phpfox
         $aSections = Phpfox::getService('cmmaterial.section')->all($sType);
         $this->template()->setTitle(Phpfox::getPhrase('cmmaterial.manage_sections'))
             ->setBreadCrumb(Phpfox::getPhrase('cmmaterial.manage_sections'), $this->url()->makeUrl('admincp.app', ['id'=>'CM_Material']))
-            ->setHeader(array(
-                'drag.js' => 'static_script',
-                'section.js' => 'module_cmmaterial',
-            ))
             ->assign(array(
                 'aSections' => $aSections,
             ));

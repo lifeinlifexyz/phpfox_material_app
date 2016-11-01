@@ -72,15 +72,14 @@ class Cmmaterial_Component_Controller_Admincp_section_Add extends Phpfox_Compone
             }
 
             if ($oValid->isValid($aInput) && $this->_validateInputLength($aInput)) {
-                $sUrl = 'admincp.cmmaterial.section.' . $sType;
                 if ($bIsEdit) {
                     $aInput['section_id'] = $iEditId;
                     if (Phpfox::getService('cmmaterial.section.process')->update($aInput)) {
-                        $this->url()->send('admincp.app', ['id' => 'CM_Material'], Phpfox::getPhrase('cmmaterial.section_block_successfully_updated'));
+                        $this->url()->send('admincp.app', ['id' => 'CM_Material', 'sectiontype' => $sType], Phpfox::getPhrase('cmmaterial.section_block_successfully_updated'));
                     }
                 } else {
                     if (Phpfox::getService('cmmaterial.section.process')->create($aInput)) {
-                        $this->url()->send('admincp.app', ['id' => 'CM_Material'], Phpfox::getPhrase('cmmaterial.section_block_successfully_added'));
+                        $this->url()->send('admincp.app', ['id' => 'CM_Material', 'sectiontype' => $sType], Phpfox::getPhrase('cmmaterial.section_block_successfully_added'));
                     }
                 }
             }
