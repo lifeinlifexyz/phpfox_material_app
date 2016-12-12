@@ -5,8 +5,8 @@ use Core\App;
 
 /**
  * Class Install
- * @author  Neil
- * @version 4.5.0
+ * @author  CodeMake.Org
+ * @version 4.0.4
  * @package Apps\CM_Material
  */
 class Install extends App\App
