@@ -42,10 +42,10 @@ class Cmmaterial_Component_Controller_Index_Visitor extends Phpfox_Component
 
         if (!$image) {
             $images = [
-                'create-a-community-for-musicians.jpg' => Phpfox::getPhrase('core.creating_communities_for_musicians'),
-                'create-a-community-for-athletes.jpg' => Phpfox::getPhrase('core.creating_communities_for_athletes'),
-                'create-a-community-for-photographers.jpg' => Phpfox::getPhrase('core.creating_communities_for_photographers'),
-                'create-a-social-network-for-fine-cooking.jpg' => Phpfox::getPhrase('core.creating_communities_for_fine_cooking')
+                'create-a-community-for-musicians.jpg' => _p('core.creating_communities_for_musicians'),
+                'create-a-community-for-athletes.jpg' => _p('core.creating_communities_for_athletes'),
+                'create-a-community-for-photographers.jpg' => _p('core.creating_communities_for_photographers'),
+                'create-a-social-network-for-fine-cooking.jpg' => _p('core.creating_communities_for_fine_cooking')
             ];
             $total = rand(1, (count($images)));
             $image = [];

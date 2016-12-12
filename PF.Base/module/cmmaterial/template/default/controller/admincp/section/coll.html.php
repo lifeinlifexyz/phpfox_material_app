@@ -15,7 +15,7 @@ defined('PHPFOX') or exit('NO DICE!');
 <hr>
 {if count($aSections)}
 <div class="table_header">
-	{phrase var='cmmaterial.section_row'}
+	{phrase var='cmmaterial.cmmaterial_section_row'}
 </div>
 <form method="post" action="{url link='admincp.cmmaterial.section.row'}">
 	<table id="js_drag_drop" cellpadding="0" cellspacing="0">
@@ -52,6 +52,6 @@ defined('PHPFOX') or exit('NO DICE!');
 </form>
 {else}
 <div class="p_4">
-	{phrase var='cmmaterial.no_section_have_been_created'}
+	{phrase var='cmmaterial.cmmaterial_no_section_have_been_created'}
 </div>
 {/if}

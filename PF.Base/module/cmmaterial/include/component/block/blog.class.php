@@ -111,21 +111,21 @@ class Cmmaterial_Component_Block_Blog extends Phpfox_Component
     {
         $aTypes = array(
             'latest' => array(
-                'title' => Phpfox::getPhrase('cmmaterial.latest_blogs'),
+                'title' => _p('cmmaterial.latest_blogs'),
                 'sort' => array(
-                    'latest' => array('blog.blog_id', Phpfox::getPhrase('blog.latest')),
+                    'latest' => array('blog.blog_id', _p('blog.latest')),
                 ),
             ),
             'most_viewed' => array(
-                'title' => Phpfox::getPhrase('cmmaterial.most_viewed_blogs'),
+                'title' => _p('cmmaterial.most_viewed_blogs'),
                 'sort' => array(
-                    'most-viewed' => array('blog.total_view', Phpfox::getPhrase('blog.most_viewed')),
+                    'most-viewed' => array('blog.total_view', _p('blog.most_viewed')),
                 ),
             ),
             'most_discussed' => array(
-                'title' => Phpfox::getPhrase('cmmaterial.most_discussed_blogs'),
+                'title' => _p('cmmaterial.most_discussed_blogs'),
                 'sort' => array(
-                    'most-talked' => array('blog.total_comment', Phpfox::getPhrase('blog.most_discussed')),
+                    'most-talked' => array('blog.total_comment', _p('blog.most_discussed')),
                 ),
             ),
         );

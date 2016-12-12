@@ -22,24 +22,24 @@ class Cmmaterial_Component_Controller_Admincp_Section_Basesection extends Phpfox
         $aAllowedTypes = ['row', 'coll'];
 
         if (!in_array($sType, $aAllowedTypes)) {
-            return Phpfox_Error::display(Phpfox::getPhrase('cmmaterial.section_type_not_found', array(), false, 'Not Found'), 404);
+            return Phpfox_Error::display(_p('cmmaterial.section_type_not_found'), 404);
         }
 
         if ($aDeleteIds = $this->request()->getArray('id')) {
             if (Phpfox::getService('cmmaterial.section.process')->deleteMultiple($aDeleteIds)) {
-                $this->url()->send('admincp.app', ['id' => 'CM_Material'], Phpfox::getPhrase('cmmaterial.section_s_successfully_deleted'));
+                $this->url()->send('admincp.app', ['id' => 'CM_Material'], _p('cmmaterial.section_s_successfully_deleted'));
             }
         }
 
         if (($iDelete = $this->request()->getInt('delete'))) {
             if (Phpfox::getService('cmmaterial.section.process')->delete($iDelete)) {
-                $this->url()->send('admincp.app', ['id' => 'CM_Material'], Phpfox::getPhrase('cmmaterial.section_successfully_deleted'));
+                $this->url()->send('admincp.app', ['id' => 'CM_Material'], _p('cmmaterial.section_successfully_deleted'));
             }
         }
 
         $aSections = Phpfox::getService('cmmaterial.section')->all($sType);
-        $this->template()->setTitle(Phpfox::getPhrase('cmmaterial.manage_sections'))
-            ->setBreadCrumb(Phpfox::getPhrase('cmmaterial.manage_sections'), $this->url()->makeUrl('admincp.app', ['id'=>'CM_Material']))
+        $this->template()->setTitle(_p('cmmaterial.manage_sections'))
+            ->setBreadCrumb(_p('cmmaterial.manage_sections'), $this->url()->makeUrl('admincp.app', ['id'=>'CM_Material']))
             ->assign(array(
                 'aSections' => $aSections,
             ));

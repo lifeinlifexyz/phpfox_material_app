@@ -72,9 +72,11 @@ class CMmaterial_Service_Section_Process extends Phpfox_Service
         $bHasImage = $this->hasImage($oFile);
 
         if ($bHasImage) {
-            $sDirImage = Phpfox::getParam('core.dir_pic') . 'cmmaterial/';
+            $sDirImage = Phpfox::getParam('core.dir_pic') . 'cmmaterial'.PHPFOX_DS;
+            if (!is_dir($sDirImage)){
+                $oFile->mkdir($sDirImage);
+            }
             $sFileName = $oFile->upload('image', $sDirImage, $iId);
-
             $this->database()->update($this->_sTable, array('image_path' => $sFileName), 'section_id = ' . $iId);
             // thumbnails will be created automatically
 

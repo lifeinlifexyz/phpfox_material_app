@@ -31,11 +31,11 @@ class Cmmaterial_Component_Controller_Admincp_section_Add extends Phpfox_Compone
         $aValidation = array(
             'title' => array(
                 'def' => 'required',
-                'title' => Phpfox::getPhrase('cmmaterial.title_is_required'),
+                'title' => _p('cmmaterial.title_is_required'),
             ),
             'description' => array(
                 'def' => 'required',
-                'title' => Phpfox::getPhrase('cmmaterial.description_is_required'),
+                'title' => _p('cmmaterial.description_is_required'),
             )
         );
 
@@ -47,14 +47,14 @@ class Cmmaterial_Component_Controller_Admincp_section_Add extends Phpfox_Compone
         if (!$bHasImage) {
             $aValidation['image'] = array(
                 'def' => 'required',
-                'title' => Phpfox::getPhrase('cmmaterial.photo_is_required'),
+                'title' => _p('cmmaterial.photo_is_required'),
             );
         }
 
         if ($sType == 'row') {
             $aValidation['background'] = array(
                 'def' => 'required',
-                'background' => Phpfox::getPhrase('cmmaterial.background_is_required'),
+                'background' => _p('cmmaterial.background_is_required'),
             );
         }
 
@@ -75,19 +75,19 @@ class Cmmaterial_Component_Controller_Admincp_section_Add extends Phpfox_Compone
                 if ($bIsEdit) {
                     $aInput['section_id'] = $iEditId;
                     if (Phpfox::getService('cmmaterial.section.process')->update($aInput)) {
-                        $this->url()->send('admincp.app', ['id' => 'CM_Material', 'sectiontype' => $sType], Phpfox::getPhrase('cmmaterial.section_block_successfully_updated'));
+                        $this->url()->send('admincp.app', ['id' => 'CM_Material', 'sectiontype' => $sType], _p('cmmaterial.section_block_successfully_updated'));
                     }
                 } else {
                     if (Phpfox::getService('cmmaterial.section.process')->create($aInput)) {
-                        $this->url()->send('admincp.app', ['id' => 'CM_Material', 'sectiontype' => $sType], Phpfox::getPhrase('cmmaterial.section_block_successfully_added'));
+                        $this->url()->send('admincp.app', ['id' => 'CM_Material', 'sectiontype' => $sType], _p('cmmaterial.section_block_successfully_added'));
                     }
                 }
             }
         }
         $this->template()
-            ->setTitle($bIsEdit ? Phpfox::getPhrase('cmmaterial.edit_section_block') : Phpfox::getPhrase('cmmaterial.add_section_block'))
+            ->setTitle($bIsEdit ? _p('cmmaterial.edit_section_block') : _p('cmmaterial.add_section_block'))
             ->setHeader('<style>.apps_menu{display:none;}.apps_content{margin-left: 0px !important;}</style>')
-            ->setBreadCrumb($bIsEdit ? Phpfox::getPhrase('cmmaterial.edit_section_block') : Phpfox::getPhrase('cmmaterial.add_section_block'), $this->url()->makeUrl('admincp.app', ['id'=>'CM_Material']))
+            ->setBreadCrumb($bIsEdit ? _p('cmmaterial.edit_section_block') : _p('cmmaterial.add_section_block'), $this->url()->makeUrl('admincp.app', ['id'=>'CM_Material']))
             ->assign(array(
                 'sCreateJs' => $oValid->createJS(),
                 'sGetJsForm' => $oValid->getJsForm(),
@@ -102,7 +102,7 @@ class Cmmaterial_Component_Controller_Admincp_section_Add extends Phpfox_Compone
     {
         $iMaxLengTitle = 64;
         if (strlen($aVals['title']) > $iMaxLengTitle) {
-            Phpfox_Error::set(Phpfox::getPhrase('cmmaterial.title_can_not_be_larger_than_max_characters', array('max' => $iMaxLengTitle)));
+            Phpfox_Error::set(_p('cmmaterial.title_can_not_be_larger_than_max_characters', array('max' => $iMaxLengTitle)));
         }
 
         if (!Phpfox_Error::isPassed()) {

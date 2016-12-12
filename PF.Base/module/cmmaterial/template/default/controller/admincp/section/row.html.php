@@ -15,7 +15,7 @@ defined('PHPFOX') or exit('NO DICE!');
 <hr>
 {if count($aSections)}
 <div class="table_header">
-	{phrase var='cmmaterial.section_row'}
+	{phrase var='cmmaterial.cmmaterial_section_row'}
 </div>
 <form method="post" action="{url link='admincp.cmmaterial.section.row'}">
 	<table id="js_drag_drop" cellpadding="0" cellspacing="0">
@@ -51,7 +51,7 @@ defined('PHPFOX') or exit('NO DICE!');
 		{/foreach}
 	</table>
 	<div class="extra_info">
-		{phrase var='cmmaterial.you_can_have_maximum_3_section_blocks'}
+		{phrase var='cmmaterial.cmmaterial_you_can_have_maximum_3_section_blocks'}
 	</div>
 	<div class="table_bottom">
 		<input type="submit" name="delete" value="{phrase var='cmmaterial.delete_selected'}" class="sJsConfirm delete button sJsCheckBoxButton disabled" disabled="true" />
@@ -59,6 +59,6 @@ defined('PHPFOX') or exit('NO DICE!');
 </form>
 {else}
 <div class="p_4">
-	{phrase var='cmmaterial.no_section_have_been_created'}
+	{phrase var='cmmaterial.cmmaterial_no_section_have_been_created'}
 </div>
 {/if}

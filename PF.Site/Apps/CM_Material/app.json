@@ -2,7 +2,7 @@
   "id": "CM_Material",
   "name": "CM Material Template App",
   "store_id": 1625,	
-  "version": "4.0.3",
+  "version": "4.0.4",
   "vendor": "<a href=\"//codemake.org\" target=\"_blank\">CodeMake.Org</a> - See all our products <a href=\"//store.phpfox.com/techie/u/ecodemaster\" target=_new>HERE</a> - contact us at: support@codemake.org",
   "icon": "//cdn.codemake.org/phpfox/cmmaterial/default.png",
   "admincp_route": "/cmmaterial/admincp/section/row",

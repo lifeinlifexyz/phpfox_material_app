@@ -124,7 +124,7 @@ class Cmmaterial_Component_Block_Photos extends Phpfox_Component
 
         if ($aPhoto['album_id'] > 0) {
             if ($aPhoto['album_profile_id'] > 0) {
-                $aPhoto['album_title'] = Phpfox::getPhrase('photo.profile_pictures');
+                $aPhoto['album_title'] = _p('photo.profile_pictures');
                 $aPhoto['album_url'] = Phpfox::permalink('photo.album.profile', $aPhoto['user_id'], $aPhoto['user_name']);
             } else {
                 $aPhoto['album_title'] = $aPhoto['album_name'];
@@ -137,21 +137,21 @@ class Cmmaterial_Component_Block_Photos extends Phpfox_Component
     {
         $aTypes = array(
             'latest' => array(
-                'title' => Phpfox::getPhrase('cmmaterial.latest_photos'),
+                'title' => _p('cmmaterial.latest_photos'),
                 'sort' => array(
-                    'latest' => array('photo.photo_id', Phpfox::getPhrase('photo.latest')),
+                    'latest' => array('photo.photo_id', _p('photo.latest')),
                 ),
             ),
             'most_viewed' => array(
-                'title' => Phpfox::getPhrase('cmmaterial.most_viewed_photos'),
+                'title' => _p('cmmaterial.most_viewed_photos'),
                 'sort' => array(
-                    'most-viewed' => array('photo.total_view', Phpfox::getPhrase('photo.most_viewed')),
+                    'most-viewed' => array('photo.total_view', _p('photo.most_viewed')),
                 ),
             ),
             'most_discussed' => array(
-                'title' => Phpfox::getPhrase('cmmaterial.most_discussed_photos'),
+                'title' => _p('cmmaterial.most_discussed_photos'),
                 'sort' => array(
-                    'most-talked' => array('photo.total_comment', Phpfox::getPhrase('photo.most_discussed')),
+                    'most-talked' => array('photo.total_comment', _p('photo.most_discussed')),
                 ),
             ),
         );

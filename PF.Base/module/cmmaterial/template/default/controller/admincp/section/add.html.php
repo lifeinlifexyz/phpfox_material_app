@@ -11,7 +11,7 @@ defined('PHPFOX') or exit('NO DICE!');
 
 ?>
 <div class="table_header">
-	{phrase var='cmmaterial.section_block_details'}
+	{phrase var='cmmaterial.cmmaterial_section_block_details'}
 </div>
 {$sCreateJs}
 <form id="cmmaterial_js_section_form" method="post" action="{url link='current'}" enctype="multipart/form-data" onsubmit="{$sGetJsForm}">
@@ -23,7 +23,7 @@ defined('PHPFOX') or exit('NO DICE!');
 		<div class="table_right">
 			<input type="text" name="val[title]" value="{value id='title' type='input'}" size="30" maxlength="64" />
 			<div class="extra_info">
-				{phrase var='cmmaterial.maximum_64_characters'}
+				{phrase var='cmmaterial.material_maximum_64_characters'}
 			</div>
 		</div>
 		<div class="clear"></div>		
@@ -36,7 +36,7 @@ defined('PHPFOX') or exit('NO DICE!');
 		<div class="table_right">
 			<input type="text" name="val[subtitle]" value="{value id='subtitle' type='input'}" size="30" maxlength="64" />
 			<div class="extra_info">
-				{phrase var='cmmaterial.maximum_64_characters'}
+				{phrase var='cmmaterial.material_maximum_64_characters'}
 			</div>
 		</div>
 		<div class="clear"></div>

@@ -1,9 +1,12 @@
 [
+    "PF.Site\/Apps\/CM_Material\/icon.png",
     "PF.Site\/Apps\/CM_Material\/start.php",
+    "PF.Site\/Apps\/CM_Material\/Install.php",
     "PF.Site\/Apps\/CM_Material\/uninstall.php",
     "PF.Site\/Apps\/CM_Material\/assets\/autoload.js",
     "PF.Site\/Apps\/CM_Material\/app.json",
     "PF.Base\/module\/cmmaterial\/include\/plugin\/module_setcontroller_end.php",
+    "PF.Base\/module\/cmmaterial\/include\/plugin\/admincp.component_controller_controller_apps_end.php",
     "PF.Base\/module\/cmmaterial\/include\/service\/section\/section.class.php",
     "PF.Base\/module\/cmmaterial\/include\/service\/section\/process.class.php",
     "PF.Base\/module\/cmmaterial\/include\/service\/user\/user.class.php",
@@ -22,6 +25,7 @@
     "PF.Base\/module\/cmmaterial\/include\/component\/block\/section-coll.class.php",
     "PF.Base\/module\/cmmaterial\/install\/version\/v3.phpfox",
     "PF.Base\/module\/cmmaterial\/phpfox.xml",
+    "PF.Base\/module\/cmmaterial\/phrase.json",
     "PF.Base\/module\/cmmaterial\/template\/default\/controller\/index-visitor.html.php",
     "PF.Base\/module\/cmmaterial\/template\/default\/controller\/admincp\/section\/add.html.php",
     "PF.Base\/module\/cmmaterial\/template\/default\/controller\/admincp\/section\/index.html.php",
@@ -37,6 +41,7 @@
     "PF.Base\/module\/cmmaterial\/template\/default\/block\/section-coll.html.php",
     "PF.Base\/module\/cmmaterial\/static\/jscript\/section.js",
     "PF.Base\/include\/xml\/codemake_cmmaterialv4.xml",
+    "PF.Base\/module\/cmmaterial\/phpfox.xml",
     "package.json",
     "checksum.json"
 ]
