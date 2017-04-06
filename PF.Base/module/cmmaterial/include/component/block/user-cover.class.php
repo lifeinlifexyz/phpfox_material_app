@@ -14,9 +14,16 @@ class Cmmaterial_Component_Block_User_Cover extends Phpfox_Component
     {
         $aUser = Phpfox::getService('user')->get(Phpfox::getUserId());
         $aCoverPhoto = Phpfox::getService('photo')->getCoverPhoto($aUser['cover_photo_exists']);
+        $sCoverUrl = (isset($aCoverPhoto['destination']) && !empty(isset($aCoverPhoto['destination'])))
+            ? Phpfox::getLib('phpfox.image.helper')->display([
+                'server_id' => $aCoverPhoto['server_id'],
+                'file' => $aCoverPhoto['destination'],
+                'path' => 'photo.url_photo',
+                'return_url' => true,
+            ])
+            : flavor()->active->default_photo('user_cover_default', true);
         $this->template()->assign(array(
-                'aCoverPhoto' => $aCoverPhoto,
-                'sCoverDefaultUrl' => flavor()->active->default_photo('user_cover_default', true),
+                'sCoverUrl' => $sCoverUrl,
             )
         );
 
