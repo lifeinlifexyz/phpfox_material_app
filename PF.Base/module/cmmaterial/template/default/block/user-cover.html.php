@@ -1,9 +1,5 @@
 <div class="cover overlay">
-	{if isset($aCoverPhoto.server_id)}
-		{img server_id=$aCoverPhoto.server_id path='photo.url_photo' file=$aCoverPhoto.destination class="cover_photo cover-image"}
-	{else}
-	<img src="{$sCoverDefaultUrl}" alt="" class="cover_photo cover-image">
-	{/if}
+	<span class="menu-user-cover-photo" style='background-image: url({$sCoverUrl})'>&nbsp;</span>
 	<div class="overlay-panel vertical-align overlay-background">
 		<div class="vertical-align-middle">
 			{img user=$aGlobalUser suffix='_50_square'}
