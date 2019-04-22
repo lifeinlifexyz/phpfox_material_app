@@ -1,3 +1,7 @@
+<h2>Paid Support:</h2>       
+<p>The phpfox apps and themes by codemake are provided under the MIT license with no commercial support or liability. 
+<a href="mailto:phpfox@lifeinlife.xyz">phpfox@lifeinlife.xyz</a> also provides commercial support and professional customisation services.</p>
+
 <h1>PHPFox Material Theme App:</h1>
 
 Responsive Material Template App - Landing Page is an adds-on to Responsive Material Template. Installing this app together with Responsive Material Template will add a beautiful Landing Page with its rich features and functionalities.
